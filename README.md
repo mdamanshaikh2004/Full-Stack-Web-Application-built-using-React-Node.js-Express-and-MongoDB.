@@ -41,7 +41,7 @@ Real-time analytics (status, monthly trends)
 
 1️. Clone repository
 
-git clone https://github.com/Devined4spd/jobquest.git
+git clone 
 
 2️. Backend setup
 
