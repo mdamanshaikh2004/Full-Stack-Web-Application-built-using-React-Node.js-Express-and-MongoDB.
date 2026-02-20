@@ -1,47 +1,74 @@
 # Full-Stack-Web-Application-built-using-React-Node.js-Express-and-MongoDB.
-## 📌 Project Overview
+A full-stack job tracking platform to manage, monitor, and analyze job applications with interactive dashboards.
 
-The Job Application Tracker helps users store, manage, and monitor job applications in one centralized dashboard.  
-It demonstrates full-stack development concepts including REST API design, database integration, and dynamic UI rendering.
+-> Tech Stack
 
----
+Frontend: React, Vite, Recharts Backend: Node.js, Express.js Database: MongoDB Atlas Other: Axios, CORS
 
-## ✨ Features
+-> Features
 
-- ➕ Add new job applications
-- 📋 View all applied jobs
-- ❌ Delete job entries
-- 🔄 Real-time UI update using React state
-- 🌐 RESTful API integration
-- 🗄 MongoDB database storage
+Add, view, and delete job applications
 
----
+Visual dashboard: Pie & Bar charts
 
-## 🛠 Tech Stack
+Cloud DB storage with MongoDB Atlas
 
-### Frontend
-- React.js
-- useState & useEffect Hooks
-- Fetch API
-- HTML5 & CSS3
+Fully responsive UI
 
-### Backend
-- Node.js
-- Express.js
-- REST API Architecture
-- Middleware (CORS, JSON parsing)
+REST API with Express.js
 
-### Database
-- MongoDB
-- Mongoose ODM
-- Document-based storage (BSON)
+Real-time analytics (status, monthly trends)
 
----
+-> Project Structure jobquest/ │── backend/
 
-## 🧠 Architecture
+│ ├── index.js
 
-React (Frontend)  
-⬇ API Calls (HTTP Requests)  
-Node.js + Express (Backend)  
-⬇ Database Queries  
-MongoDB (Database)
+│ ├── models/
+
+│ ├── package.json
+
+│── frontend/
+
+│ ├── src/
+
+│ ├── public/
+
+│ ├── package.json
+
+│── README.md
+
+-> Installation & Setup
+
+1️. Clone repository
+
+git clone https://github.com/Devined4spd/jobquest.git
+
+2️. Backend setup
+
+cd backend npm install
+
+Create .env:
+
+PORT=4000 MONGO_URI=YOUR_MONGO_ATLAS_URI
+
+Run backend:
+
+node index.js
+
+3️ Frontend setup
+
+cd ../frontend npm install npm run dev
+
+-> Dashboard Preview
+
+Status distribution (Pie chart)
+
+Monthly applications (Bar chart)
+
+Overview summary metrics
+
+-> API Endpoints GET all jobs GET /api/jobs
+
+POST a job POST /api/jobs
+
+DELETE a job DELETE /api/jobs/:id
