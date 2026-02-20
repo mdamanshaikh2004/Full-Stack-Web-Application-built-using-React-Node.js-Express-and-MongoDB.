@@ -41,7 +41,7 @@ Real-time analytics (status, monthly trends)
 
 1️. Clone repository
 
-git clone 
+git clone https://github.com/mdamanshaikh2004/Full-Stack-Web-Application-built-using-React-Node.js-Express-and-MongoDB..git
 
 2️. Backend setup
 
